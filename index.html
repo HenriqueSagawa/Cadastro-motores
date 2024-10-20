@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Motor | Carro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="w-full">
+        <div class="relative right-0">
+            <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100" data-tabs="tabs"
+                role="list">
+                <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-slate-600 bg-inherit"
+                        data-tab-target="" role="tab" aria-selected="true" aria-controls="dashboard">
+                        Motor
+                    </a>
+                </li>
+                <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-sm transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-600 bg-inherit"
+                        data-tab-target="" role="tab" aria-selected="false" aria-controls="profile">
+                        Carro
+                    </a>
+                </li>
+                <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-sm mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                        data-tab-target="" role="tab" aria-selected="false" aria-controls="settings">
+                        Dashboard
+                    </a>
+                </li>
+            </ul>
+
+            <div data-tab-content="" class="p-5">
+                <div id="dashboard" role="tabpanel">
+                    <p class="text-slate-400 font-light">
+                    <div class="max-w-lg lg:ms-auto mx-auto text-center ">
+                        <div class="py-16 px-7 rounded-md bg-white">
+
+                            <h1 class="mb-6 text-2xl font-semibold">Cadastrar Motor</h1>
+
+                            <form>
+                                <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                                    <input type="text" id="modeloMotor" name="fname" placeholder="Modelo"
+                                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 ">
+                                    <input type="text" id="numSerieMotor" name="fname" placeholder="Número de Série"
+                                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="potenciaMotor" placeholder="Potência"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="anoMotor" placeholder="Ano"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="marcaMotor" placeholder="Marca"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="cilindradaMotor" placeholder="Cilindrada"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <textarea name="message" id="descricaoMotor" rows="5" cols=""
+                                            placeholder="Descrição"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700"></textarea>
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <button id="cadastrarMotor"
+                                            class="py-3 text-base font-medium rounded text-white bg-blue-800 w-full hover:bg-blue-700 transition duration-300">Cadastrar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+                <div class="hidden opacity-0" id="profile" role="tabpanel">
+                    <div class="max-w-lg lg:ms-auto mx-auto text-center ">
+                        <div class="py-16 px-7 rounded-md bg-white">
+
+                            <form>
+                                <h1 class="mb-6 text-2xl font-semibold">Cadastrar Carro</h1>
+                                <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+                                    <input type="text" id="donoCarro" name="fname" placeholder="Dono"
+                                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700 ">
+                                    <input type="text" id="modeloCarro" name="fname" placeholder="Modelo"
+                                        class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="marcaCarro" placeholder="Marca"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="date" id="anoCarro" placeholder="Ano"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="text" id="placaCarro" placeholder="Placa"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <label for="motorCarro"
+                                            class="float-left block  font-normal text-gray-400 text-lg">Selecione o
+                                            motor</label>
+                                        <select id="motorCarro"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                            <option value="" disabled selected>Selecionar Motor</option>
+                                        </select>
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="number" id="precoCarro" placeholder="Preço"
+                                            class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+                                    <div class="md:col-span-2">
+                                        <input type="color" id="corCarro" placeholder="Cor"
+                                            class="w-full h-12 border border-gray-300 rounded-md py-4 px-3 focus:outline-none focus:border-blue-700">
+                                    </div>
+
+
+
+                                    <div class="md:col-span-2">
+                                        <label for="subject" class="float-left block font-normal text-gray-400 text-lg">
+                                            Adicione uma foto do veículo
+                                        </label>
+                                        <input accept="image/*" type="file" id="fotoCarro" name="file" placeholder="Foto do veículo"
+                                            class="peer block w-full appearance-none border-none bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0">
+                                        <img id="previewImage" src="" alt="Pré-visualização da imagem"
+                                            style="display: none; width: 200px; height: auto;" />
+                                    </div>
+
+                                    <div class="md:col-span-2">
+                                        <button id="cadastrarCarro"
+                                            class="py-3 text-base font-medium rounded text-white bg-blue-800 w-full hover:bg-blue-700 transition duration-300">Cadastrar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden opacity-0" id="settings" role="tabpanel">
+                    <label for="selectCarro" class="block mb-2 text-sm font-medium text-gray-900">Selecione um carro</label>
+                    <select id="selectCarro"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option selected>Selecione um carro</option>
+                    </select>
+
+                    <div id="viewInfo" class="flex flex-col gap-4 mt-4">
+
+                    </div>
+
+                    <div id="viewMotor" style="display: none; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="w-[70vw] h-[60vh] bg-gray-300 p-12 absolute flex-col gap-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
