@@ -52,7 +52,7 @@ A classe `Motor` possui os seguintes atributos sugeridos:
 - **cilindradas**: Número representando a cilindrada do motor (ex: 4.0).
 
 ### Exemplo de Implementação
-```
+```javascript
 class Motor {
     constructor(tipo, potencia, cilindradas) {
         this.tipo = tipo;
@@ -78,7 +78,7 @@ A estrutura sugerida para o projeto é a seguinte:
 O arquivo HTML deve conter dois formulários: um para o cadastro de motores e outro para o cadastro de carros. No cadastro de carros, deve-se permitir a seleção de um motor cadastrado anteriormente.
 
 ### Exemplo de Estrutura HTML
- ```
+ ```html
  
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -119,7 +119,7 @@ O JavaScript implementa as classes Carro e Motor, além da lógica de cadastro e
 
 ### Exemplo de Interação Entre as Classes
 
-```
+```javascript
 let motoresCadastrados = [];
 
 class Motor {
