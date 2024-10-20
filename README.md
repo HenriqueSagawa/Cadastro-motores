@@ -175,6 +175,10 @@ document.getElementById('form-carro').addEventListener('submit', function(event)
 
 ```
 
+### Observações
+
+Os códigos apresentados, são apenas ilustrativos e não foram usados para a resolução das atividaes.
+
 ### Arquivo `style.css`
 O arquivo de estilos pode ser personalizado livremente para melhorar a aparência da página. Como o projeto utiliza Tailwind CSS, o arquivo style.css é opcional, a menos que você deseje adicionar estilos personalizados.
 
